@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/admin.css">
+
+<h5 class="text-center mt-3">All Employees List</h5>
+
+<div class="container mt-4">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">S.No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+            <th scope="col">Admin</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(let i = 0; i<employes.length; i++) {%>
+            <tr>
+              <th scope="row"><%= i+1 %></th>
+              <td> <%= employes[i].name%> </td>
+              <td> <%= employes[i].email%> </td>
+              <td> <%= employes[i].password%> </td>
+              <td> <%= employes[i].isAdmin%> </td>
+              <% if(locals.user.id != employes[i]._id) {%>
+                <td> 
+                  <a href="/admin/deleteEmployee/<%= employes[i]._id %>" class="btn btn-md">Delete</a>
+              </td>
+              <%}else{%>
+                <td>
+                  <a href="" class="btn btn-md">Delete</a>
+                </td>
+              <%}%> 
+            </tr>  
+          <%}%>
+          
+        </tbody>
+      </table>
+</div>

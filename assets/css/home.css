@@ -1,0 +1,81 @@
+
+/* The styling of home page, is done in such a way that, we get all the element in middle of the page */
+.outerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+/* If the currnet admin is not admin, then this is qoing to show  */
+.adminPass{
+    margin-top: -45px;
+}
+/* Submit button of admin Pass */
+.submitHomeButton{
+    border: 1px solid black;
+    background-color:	#FFFF8F;
+    color: black;
+    border-radius: 15px;
+}
+.submitHomeButton:hover{
+    background-color:	#FAD5A5 ;  
+}
+/* Home boxx */
+.home-box{
+    width: 55%;
+    height:fit-content;
+    text-align: center;
+    margin-top:10px;
+    font-family: Arial, sans-serif;
+   
+}
+.employeereview{
+    font-family: Arial, sans-serif;
+    font-weight:600;
+}
+.employeereview img{
+    height:85px;
+    width:95px;
+}
+.myreview{
+    font-family: Arial, sans-serif;
+    font-weight:600;
+}
+.myreview img{
+    height:85px;
+    width:95px;
+}
+.adminPass > form > input{
+    outline: none;
+    border:1px solid rgb(11, 100, 132);
+   border-radius: 7px;
+ }
+/* Here the user can review the co-employee, if admin assign to him */
+.reviewBox{
+    width: 95%;
+    height: fit-content;
+    min-height: 140px;
+    padding: 5px;
+    border: 1px solid  #006622;
+    border-radius: 10px;
+    margin-top:5px;
+} 
+/* class of form , so that we can take it's content, and store it is mongooes */
+.formClass{
+    width: 90%;
+    padding: 10px;
+}
+
+/* .card-out{
+    width: 100%;
+} */
+/* There are two card, while revieweing , we just have to make good use of it
+ */
+.in-card{
+    width: 70%;
+    border: 1px solid black;
+    background-color: #ffff66;
+    border-radius: 40px;
+    margin-left: 15%;
+}

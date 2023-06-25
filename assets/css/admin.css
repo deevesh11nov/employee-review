@@ -1,0 +1,71 @@
+
+/* Heading of the admin Page */
+.heading{
+    display: flex;
+    justify-content: center;
+    /* align-items: center;
+    align-content: center; */
+    color:black;
+    font-size:1.5rem;
+    text-decoration:underline 2px darkgreen;
+    font-weight:bold;
+   
+}
+.text-center{
+    font-size:1.2rem;
+    margin-top:5px;
+    text-decoration:underline 2px darkgreen;
+    font-weight:bold;
+}
+/* Assign Heading */
+.assingHeadine{
+    display: flex;
+    justify-content: center;
+}
+/* Container for assigning reviwer and reviewing */
+.reviewContainer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid darkgreen;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 30%;
+    align-items: center;
+    height: fit-content;
+    border-radius:10px;
+}
+/* for the reviewer, containere */
+.reviewer{
+    width: 90%;
+}
+/* Submit buttons div*/
+.submitButtons{
+    margin-left: 36%;
+    width: 30%;
+    margin-top:10px;
+    padding:10px;
+}
+/* Submit buttons  */
+.submitButtons button{
+    background-color:#FFFF8F;
+    width: 10vw;
+    height: 25px;
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+
+}
+.submitButtons button:hover{
+    background-color:yellow ;
+}
+/* This button is used in assigning admin,  */
+.submitButtons2{
+    width: 10vw;
+}
+
+.btn{
+    background-color: yellow;
+}
+#addemp{
+    background-color: lightyellow;
+}

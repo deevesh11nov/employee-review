@@ -1,0 +1,34 @@
+<!-- This is the header syntax -->
+<link rel="stylesheet" href="/css/header.css">
+<div>
+    <div class="navBar">
+        <div class="nameOfApp"><a href="/"> Employee Review</a></div>
+        <% if (locals.user){ %>
+            <%if(locals.user.isAdmin){%>
+                <div class="logOut">
+                    
+                    <a href="/admin/assignWork"> <small>Assign Work</small> </a>
+                    <a href="/admin/view-employee"> <small>Employees</small> </a>
+                    <a href="/admin/add-employee"> <small> Add Employee </small> </a>
+                    <a href="/users/sign-out" > <small>LogOut </a> </small>
+                    <span class="nameOfUser"><img src="../images/profile.jpg"><%= locals.user.name%>  </span> 
+                </div>
+            <%}else{%>    
+                
+                <div class="logOut"> 
+                <a href="/users/sign-out" > <small>LogOut</small> </a> 
+                <span class="nameOfUser"><img src="../images/profile.jpg"><%= locals.user.name%>  </span>
+            </div>
+            <%}%>
+            
+        <%} else { %>
+            <div class="noUser">
+                <ul>
+                    <li> <a href="/users/sign-in"> Sign-In </a> </li>
+                    <li>  <a href="/users/sign-up"> Sign-Up </a> </li>
+                </ul>
+            </div>
+        
+        <%}%>       
+    </div>
+</div> 
