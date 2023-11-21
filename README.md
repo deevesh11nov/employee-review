@@ -13,6 +13,8 @@ This is an application that allows employees to submit feedback toward each othe
     npm start
 
 ```
+## Deployed link
+https://enchanting-overalls-mite.cyclic.app/users/sign-in
 
 ## Folder Structure
 
